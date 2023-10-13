@@ -29,7 +29,7 @@ export class QrController {
   }
 
   private async generateQRCode() {
-    const url = 'http://localhost:5000/qr/data'; // URL of the data endpoint
+    const url = 'https://qrcodetest-frontend.netlify.app/movies.html'; // URL of the data endpoint
     try {
       const qrCode = await qr.toDataURL(url);
       this.qrCode = qrCode;
